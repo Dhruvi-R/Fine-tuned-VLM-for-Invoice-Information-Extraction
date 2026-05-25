@@ -1,13 +1,13 @@
 # Fine-tuned-VLM-for-Invoice-Information-Extraction
 
 ## Overview
-This project focuses on extracting structured information from invoice images using the Vision-Language Model (VLM) **Qwen2.5-VL**. The notebook demonstrates how to load an invoice dataset, preprocess invoice images, perform inference using a pretrained model, and generate structured JSON outputs from invoice documents.
+This project focuses on extracting structured information from invoice images using the Vision-Language Model (VLM) **Qwen2.5-VL-7B-Instruct**. The notebook demonstrates how to load an invoice dataset, preprocess invoice images, perform inference using a pretrained model, and generate structured JSON outputs from invoice documents.
 
 The project also includes steps for:
 - Loading and exploring the invoice dataset
 - Running inference on invoice images
 - Extracting invoice fields in JSON format
-- Fine-tuning the Qwen2.5-VL model using LoRA with the Unsloth framework
+- Fine-tuning the Qwen2.5-VL-7B-Instruct model using LoRA with the Unsloth framework
 - Evaluating model outputs for schema-specific generation tasks
 
 ---
@@ -27,7 +27,7 @@ The project also includes steps for:
 - Python
 - PyTorch
 - Hugging Face Transformers
-- Qwen2.5-VL
+- Qwen2.5-VL-7B-Instruct
 - Unsloth
 - Accelerate
 - Pillow
@@ -51,8 +51,8 @@ The dataset is loaded using the Hugging Face `datasets` library.
 ### 2. Explore Invoice Images
 Invoice images are visualized and corresponding ground truth annotations are inspected.
 
-### 3. Load Qwen2.5-VL Model
-The pretrained Qwen2.5-VL model and processor are initialized for inference.
+### 3. Load Qwen2.5-VL-7B-Instruct Model
+The pretrained Qwen2.5-VL-7B-Instruct model and processor are initialized for inference.
 
 ### 4. Perform Invoice Extraction
 The model generates structured outputs from invoice images.
@@ -85,7 +85,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ---
 
 ## Model Used
-- **Qwen2.5-VL**
+- **Qwen2.5-VL-7B-Instruct**
 
 This model is capable of understanding both visual and textual information, making it suitable for document understanding and invoice extraction tasks.
 
