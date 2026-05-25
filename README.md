@@ -103,6 +103,7 @@ Example structured JSON output:
 }
 ```
 
+
 ---
 
 ## Use Cases
